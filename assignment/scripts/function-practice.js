@@ -144,3 +144,19 @@ function countStringInArray(arr, string) {
       }
   } return counter;
 }
+//prob 4 from codewars
+// The Task
+// Given a string, you must decide whether or not it contains a valid phone number. If it does, return the corrected phone number as a string ie. '02078834982' with no whitespace or special characters, else return "Not a phone number".
+function isItANum(str) {
+  newStr = str.replace(/[^0-9\.]+/g, "")
+    if(newStr.length===11 && newStr.charAt(0)==0){
+      return newStr;
+    } else {
+      return "Not a phone number"
+    }
+    // your code here;
+    // I'm learning Regex through freecodecamp so I understand the principles, but I found this particular Regex by googling, because I'm not that good at it yet
+}
+
+  console.log(isItANum("qkwhlkklkhlkdaskh891"))
+  //test
