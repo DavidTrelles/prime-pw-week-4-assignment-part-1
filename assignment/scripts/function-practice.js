@@ -118,3 +118,29 @@ console.log("test positives, should return only positives from an array 1,-2,3,-
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+// prob 1: I was supposed to change a DNA sequence into an RNA sequence
+
+function DNAtoRNA(dna) {
+  // create a function which returns an RNA sequence from the given DNA sequence
+   return dna.replace(/T/g, "U");
+}
+
+//prob 2: I was supposed iterate through an array and multiply each number, like sumAll but multiplying
+function grow(x){
+  let t = 1;
+  for(n of x) {
+    t*=n;
+  }
+return t;
+}
+
+//prob 3 stretch goal from group project
+
+function countStringInArray(arr, string) {
+  let counter = 0
+  for (let f=0; f <arr.length; f++) {
+      if (arr[f] === string) {
+          counter++;
+      }
+  } return counter;
+}
